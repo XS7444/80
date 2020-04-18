@@ -1,0 +1,58 @@
+{{ if and (ne .Section "docs") (not .Params.no_donate_footer) }}
+<div class="donate-footer">
+  <div class="wrapper text-center">
+    <h2>{{ i18n "footer_support_us" }}</h2>
+    <div class="buttons">
+      <a class="accent" href="{{ "donate/" | relLangURL }}">{{ i18n "footer_donate" }}</a>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+<footer class="site-footer">
+
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="social-media-list">
+          {{ with .Site.Params.github_username }}
+          <li>
+            <i class="fab fa-github" aria-hidden="true"></i>
+            <a href="https://github.com/{{ . }}">
+              <span class="username">GitHub</span>
+            </a>
+          </li>
+          {{ end }}
+
+          {{ with .Site.Params.twitter_username }}
+          <li>
+            <i class="fab fa-twitter" aria-hidden="true"></i>
+            <a href="https://twitter.com/{{ . }}">
+              <span class="username">Twitter</span>
+            </a>
+          </li>
+         {{ end }}
+        </ul>
+        {{ i18n "footer_policies" | safeHTML }}
+      </div>
+
+      <div class="footer-col  footer-col-2">
+        <p class="text">{{ .Site.Params.description | safeHTML }}</p>
+        <div itemscope itemtype="http://schema.org/PostalAddress">
+          <span itemprop="streetAddress">1 Letterman Drive, Suite D4700,</span>
+          <span itemprop="addressLocality">San Francisco,</span>
+          <span itemprop="addressRegion">CA</span>
+          <span itemprop="postalCode">94129</span>
+        </div>
+        <p class="text">{{ i18n "linux_foundation_trademark" }}</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="{{ "js/main.min.js" | relURL }}"></script>
+  
+  <script defer src="{{ "js/ga.js" | relURL }}"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-56433935-1&aip=1"></script>
+
+</footer>

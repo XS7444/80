@@ -1,0 +1,69 @@
+{{ range $.Site.Data.clients.categories }}
+    <h2 id="clients-{{ urlize . }}">{{ . }}</h2>
+    {{ $category := . }}
+    <ul>
+    {{ range $.Site.Data.clients.list }}
+        {{ if and .acme_v2 (eq $category .category) }}
+        <li>
+            <a href="{{ .url }}">{{ .name }}</a>
+            {{ if .category_comments }}
+                {{ .category_comments | markdownify }}
+            {{ else if .comments }}
+                {{ .comments | markdownify }}
+            {{ end }}
+        </li>
+        {{ end }}
+    {{ end }}
+    </ul>
+{{ end }}
+
+<h1 id="libraries">{{ .Get "libraries" }}</h1>
+
+{{ $certbot := .Inner }}
+
+{{ range $.Site.Data.clients.libraries }}
+    <h2 id="libraries-{{ urlize . }}">{{ . }}</h2>
+    {{ $library := . }}
+    <ul>
+    {{ if eq . "Python"}}
+        <li>{{ $certbot | markdownify }}</li>
+    {{ end }}
+    {{ range $.Site.Data.clients.list }}
+        {{ if and .acme_v2 (eq $library .library) }}
+        <li>
+            <a href="{{ if .library_url }}{{ .library_url }}{{ else }}{{ .url }}{{ end }}">{{ .name }}</a>
+            {{ if .library_comments }}
+                {{ .library_comments | markdownify }}
+            {{ else if .comments }}
+                {{ .comments | markdownify }}
+            {{ end }}
+        </li>
+        {{ end }}
+    {{ end }}
+    </ul>
+{{ end }}
+
+<h1 id="projects-integrating-with-let-s-encrypt">{{ .Get "projects" }}</h1>
+
+<ul>
+{{ range $.Site.Data.clients.projects }}
+        <li>
+            <a href="{{ .url }}">{{ .name }}</a>
+            {{ if .comments }}
+                {{ .comments | markdownify }}
+            {{ end }}
+        </li>
+{{ end }}
+</ul>
+
+{{ range $.Site.Data.clients.list }}
+    {{ if and (not .category) (not .library) }}
+            {{ $.MissingLibraryOrCategory }}
+    {{ end }}
+    {{ if and .category (not (in $.Site.Data.clients.categories .category)) }}
+            {{ $.CategoryUnknow }}
+    {{ end }}
+    {{ if and .library (not (in $.Site.Data.clients.libraries .library)) }}
+            {{ $.LibraryUnknow }}
+    {{ end }}
+{{ end }}

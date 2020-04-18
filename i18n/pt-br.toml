@@ -1,0 +1,128 @@
+# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
+
+[home_hero_title]
+other = "Let&rsquo;s Encrypt é uma Autoridade Certificadora <span>gratuita</span>, <span>automatizada</span> e <span>aberta</span>."
+
+[home_hero_getting_started]
+other = "Começar"
+
+[home_hero_donate]
+other = "Doar"
+
+[home_hero_sponsor]
+other = "Patrocinar"
+
+[home_major_sponsors]
+other = "Principais Patrocinadores e Doadores"
+
+[home_from_our_blog]
+other = "Do nosso blog"
+
+[read_more]
+other = "Leia mais"
+
+[subscribe_rss]
+other = "Assine <a href=\"{{ .Permalink }}\">via RSS</a>"
+
+[footer_support_us]
+other = "Apoie uma Web mais segura e que respeita a privacidade."
+
+[footer_donate]
+other = "Doar"
+
+[footer_policies]
+other = """
+Veja nossa <a href="/pt-br/privacy/">política de privacidade</a>.<br>
+Veja nossa <a href="/pt-br/trademarks/">política de direitos autorais</a>.
+"""
+
+[linux_foundation_trademark]
+other = "Linux Foundation é uma marca registrada da The Linux Foundation. Linux é uma marca registrada de Linus Torvalds."
+
+[header_skip_nav]
+other = "Pular links de navegação"
+
+[last_updated]
+other = "Última atualização: "
+
+[see_all_doc]
+other = "Ver Documentação completa"
+
+[blog_feed]
+other = "Feed do blog Let's Encrypt"
+
+[platinum]
+other = "Platina"
+
+[gold]
+other = "Ouro"
+
+[silver]
+other = "Prata"
+
+[languages]
+other = "Idiomas"
+
+[view_in_english]
+other = "Visualizar em Inglês"
+
+[view_in_xxx]
+# In translation, replace "English" by your language FULL name. see other langs for example.
+# (nb: used manually in layout/single.html)
+other = "Ver em Português (do brasil)"
+
+[old_version]
+other = "Nota: A versão em Inglês foi atualizada desde a última tradução desta página."
+
+[not_yet_translated]
+other = "Esta página ainda não foi traduzida. Você pode contribuir <a href=\"https://github.com/letsencrypt/website\">aqui</a>."
+
+[english_is_canonical]
+other = "A versão em Inglês é canônica"
+
+[graph_issued]
+other = "Emitidos"
+
+[graph_certificates_active]
+other = "Certificados Ativos"
+
+[graph_fully_qualified_domains_active]
+other = "Domínios Completamente Qualificados Ativos"
+
+[graph_registered_domains_active]
+other = "Domínios Registrados Ativos"
+
+[graph_active_count]
+other = "Contagem de Ativos"
+
+[graph_issued_per_day]
+other = "Emitidos por dia"
+
+[graph_all_users]
+other = "Todos os usuários"
+
+[graph_usa_users]
+other = "Usuários dos Estados Unidos"
+
+[graph_japan_users]
+other = "Usuários do Japão"
+
+[graph_percent_https]
+other = "Porcentagem de páginas carregadas usando HTTPS (média de 14 dias)"
+
+
+
+
+
+
+[overview]
+other = "Visão Geral"
+
+[subscriber_information]
+other = "Informações Para Usuário"
+
+[advanced_subscriber_information]
+other = "Informações Para Usuários Avançados"
+
+[client_developer_information]
+other = "Informações Para Desenvolvedores de Clientes"
