@@ -1,0 +1,111 @@
+# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
+
+[home_hero_title]
+other = "Let&rsquo;s Encrypt est une autorité de certification <span>gratuite</span>, <span>automatisée</span> et <span>ouverte</span>."
+
+[home_hero_getting_started]
+other = "Commencer"
+
+[home_hero_donate]
+other = "Faire un don"
+
+[home_hero_sponsor]
+other = "Sponsoriser"
+
+[home_major_sponsors]
+other = "Principaux Sponsors et Donateurs"
+
+[home_from_our_blog]
+other = "De notre blog"
+
+[read_more]
+other = "Lire plus"
+
+[subscribe_rss]
+other = "S'abonner <a href=\"{{ .Permalink }}\">au flux RSS</a>"
+
+[footer_support_us]
+other = "Soutenez un Web plus sûr et plus respectueux de la vie privée."
+
+[footer_donate]
+other = "Faire un don"
+
+[footer_policies]
+other = """
+Voir notre <a href="/fr/privacy/">politique de confidentialité</a>.<br>
+Voir notre <a href="/fr/trademarks/">politique en matière de copyright</a>.
+"""
+
+[linux_foundation_trademark]
+other = "Linux Foundation est une marque déposée de The Linux Foundation. Linux est une marque déposée de Linus Torvalds."
+
+[header_skip_nav]
+other = "Passer les liens de navigation"
+
+[last_updated]
+other = "Dernière mise à jour : "
+
+[see_all_doc]
+other = "Voir toute la documentation"
+
+[blog_feed]
+other = "Flux du blog de Let's Encrypt"
+
+[platinum]
+other = "Platine"
+
+[gold]
+other = "Or"
+
+[silver]
+other = "Argent"
+
+[languages]
+other = "Langues"
+
+[view_in_english]
+other = "Voir en anglais"
+
+[view_in_xxx]
+# In translation, replace "English" by your language FULL name. see other langs for example.
+# (nb: used manually in layout/single.html)
+other = "Voir en français"
+
+[old_version]
+other = "Note : La version anglaise a été mise à jour depuis sa traduction"
+
+[not_yet_translated]
+other = "Cette page n’a pas encore été traduite. Vous pouvez contribuer <a href=\"https://github.com/letsencrypt/website\">là</a>."
+
+[english_is_canonical]
+other = "Remarque : la version anglaise fait foi"
+
+[graph_issued]
+other = "Émis"
+
+[graph_certificates_active]
+other = "Certificats actifs"
+
+[graph_fully_qualified_domains_active]
+other = "FQDN actifs"
+
+[graph_registered_domains_active]
+other = "Domaines enregistrés actifs"
+
+[graph_active_count]
+other = "Nombre actif"
+
+[graph_issued_per_day]
+other = "Émis par jour"
+
+[graph_all_users]
+other = "Tous les utilisateurs"
+
+[graph_usa_users]
+other = "Utilisateurs américain"
+
+[graph_japan_users]
+other = "Utilisateurs du Japon"
+
+[graph_percent_https]
+other = "Pourcentage de chargement de page en HTTPS (moyenne glissante sur 14 jours)"

@@ -1,0 +1,111 @@
+# See https://github.com/nicksnyder/go-i18n for format documentation and some tools.
+
+[home_hero_title]
+other = "Let&rsquo;s Encrypt - это <span>бесплатный</span>, <span>автоматизированный</span>, и <span>открытый</span> Центр Сертификации."
+
+[home_hero_getting_started]
+other = "Приступить"
+
+[home_hero_donate]
+other = "Поддержать нас"
+
+[home_hero_sponsor]
+other = "Поддержать"
+
+[home_major_sponsors]
+other = "Основные спонсоры и дарители"
+
+[home_from_our_blog]
+other = "В нашем блоге (на английском)"
+
+[read_more]
+other = "Ещё..."
+
+[subscribe_rss]
+other = "Подписаться <a href=\"{{ .Permalink }}\">на RSS</a>"
+
+[footer_support_us]
+other = "Помогите сделать Интернет безопасным, и уважающим вашу конфиденциальность."
+
+[footer_donate]
+other = "Поддержите нас"
+
+[footer_policies]
+other = """
+Ознакомьтесь с нашей <a href="/ru/privacy/">политикой конфиденциальности</a>.<br>
+Ознакомьтесь с нашей <a href="/ru/trademarks/">политикой в отношении товарных знаков</a>.
+"""
+
+[linux_foundation_trademark]
+other = "Linux Foundation является зарегистрированным товарным знаком The Linux Foundation. Linux является зарегистрированным товарным знаком, принадлежащим Линусу Торвальдсу."
+
+[header_skip_nav]
+other = "Пропустить навигационные ссылки"
+
+[last_updated]
+other = "Последнее обновление: "
+
+[see_all_doc]
+other = "Вся документация"
+
+[blog_feed]
+other = "Блог Let's Encrypt"
+
+[platinum]
+other = "Платиновые"
+
+[gold]
+other = "Золотые"
+
+[silver]
+other = "Серебряные"
+
+[languages]
+other = "Язык"
+
+[view_in_english]
+other = "Просмотреть на английском"
+
+[view_in_xxx]
+# In translation, replace "English" by your language FULL name. see other langs for example.
+# (nb: used manually in layout/single.html)
+other = "Просмотреть на русском"
+
+[old_version]
+other = "Внимание! Английская версия сайта была обновлена, перевод неактуален"
+
+[not_yet_translated]
+other = "Эта страница ещё не переведена. Вы можете внести свой вклад <a href=\"https://github.com/letsencrypt/website\">здесь</a>."
+
+[english_is_canonical]
+other = "Английская версия является каноничной"
+
+[graph_issued]
+other = "Выпущено"
+
+[graph_certificates_active]
+other = "Активные сертификаты"
+
+[graph_fully_qualified_domains_active]
+other = "Полноопределённые активные домены"
+
+[graph_registered_domains_active]
+other = "Зарегистрированные активные домены"
+
+[graph_active_count]
+other = "Количество активных"
+
+[graph_issued_per_day]
+other = "Выпущено за сутки"
+
+[graph_all_users]
+other = "Все пользователи"
+
+[graph_usa_users]
+other = "Пользователи из США"
+
+[graph_japan_users]
+other = "Пользователи из Японии"
+
+[graph_percent_https]
+other = "Доля страниц, в %, загруженных по HTTPS (скользящая средняя за 14 дней)"
